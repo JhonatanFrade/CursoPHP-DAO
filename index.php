@@ -41,8 +41,14 @@ echo $root;
 //echo $aluno;
 
 //acrescentando o UPDATE
+//$usuario = new Usuario();
+//$usuario->loadById(8);
+//$usuario->update("professor","teste123");
+//echo $usuario;
+
+//acrescentando o DELETE
 $usuario = new Usuario();
-$usuario->loadById(8);
-$usuario->update("professor","teste123");
+$usuario->loadById(7);
+$usuario->delete();
 echo $usuario;
 ?>
