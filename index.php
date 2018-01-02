@@ -28,7 +28,7 @@ echo $root;
 //$usuario->login("root","!@#$");
 //echo $usuario;
 
-//insert de um usuario novo
+//INSERT de um usuario novo
 //$aluno = new Usuario();
 //$aluno->setDeslogin("aluno");
 //$aluno->setDessenha("@lun0");
@@ -36,8 +36,13 @@ echo $root;
 //echo $aluno;
 
 //diminuindo o código:
-$aluno = new Usuario("aluno", "@alun0");
-$aluno->insert();
-echo $aluno;
+//$aluno = new Usuario("aluno", "@alun0");
+//$aluno->insert();
+//echo $aluno;
 
+//acrescentando o UPDATE
+$usuario = new Usuario();
+$usuario->loadById(8);
+$usuario->update("professor","teste123");
+echo $usuario;
 ?>
